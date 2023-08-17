@@ -1,0 +1,50 @@
+.button{
+    right: 0px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    // border-radius: 100%;
+    // background-color: #455CE9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // background-color: blue;
+}
+
+.burger{
+    width: 100%;
+    &::after, &::before{
+        content: "";
+        display: block;
+        height: 1px;
+        width: 40%;
+        margin: auto;
+        background-color: blue;
+        position: relative;
+        transition: transform 0.3s;
+    }
+
+    &::after{
+        top: -5px;
+    }
+
+    &::before{
+        top: 5px;
+    }
+}
+
+.burgerActive{
+        &::after{
+            transform: rotate(45deg);
+            top: -1px;
+        }
+
+        &::before{
+            transform: rotate(-45deg);
+            top: 0px;
+        }
+
+    
+    }
