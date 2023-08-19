@@ -7,7 +7,7 @@ import PhoneIcon from "../../assets/phone.png"
 
 export default function Footer() {
     return <>
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3" >
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-3" >
             <div className="mt-6">
                 <Image src={LogoIcon} alt="Logo KMHD UI" className="h-16 w-16"></Image>
                 <h2 className="font-bold text-xl">KMHD Universitas Indonesia</h2>

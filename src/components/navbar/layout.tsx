@@ -16,19 +16,21 @@ export default function Navbar(props: propsNavbar ) {
     
     return (
         <> 
-            <nav className={`flex justify-between mb-4`}>
-                <Image 
-                    src={Logo} 
-                    alt='Logo KMHD UI'
-                    width={66}
-                    height={66}
-                    quality={20}
-                    priority={false}
-                ></Image>
-                <div className={`${styles.button} visible md:invisible`} onClick={()=> {setIsActive(!isActive)}}>
-                    <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}` }></div>
-                    {isActive ? <NavigationMobile />: <></>}
-                </div>
+            <nav className={``}>
+               <div className='flex justify-between mb-4'>
+                    <Image 
+                        src={Logo} 
+                        alt='Logo KMHD UI'
+                        width={66}
+                        height={66}
+                        quality={20}
+                        priority={false}
+                    ></Image>
+                    <div className={`${styles.button} visible md:invisible `} onClick={()=> {setIsActive(!isActive)}}>
+                        <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}` }></div>
+                        {isActive ?<NavigationMobile></NavigationMobile> : <></>}
+                    </div>
+               </div>
             </nav>  
         </>
     )
