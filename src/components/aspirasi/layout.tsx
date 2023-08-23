@@ -19,7 +19,8 @@ export default function Aspirasi() {
                 <p className="mt-7
                     text-center md:text-start
                 ">Halo Warga KMHD UI!</p>
-                <p className="mt-3
+                <p className="mt-3 
+                    md:pr-20
                     text-center md:text-start
                 ">Yuk tuangkan aspirasi kalian untuk bersama-sama membangun KMHD UI lebih baik lagi. Ditunggu aspirasi kerennya!</p>
             </div>

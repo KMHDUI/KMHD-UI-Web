@@ -16,25 +16,41 @@ export default function ValueAbout() {
                     <div className="flex justify-center item-center">
                         <Image src={Solidarity} alt="logo-solidarity" className="w-[100px] md:max-w-[120px]"></Image>
                     </div>
-                    <p >Solidarity</p>
+                    <p className="mt-4">Solidarity</p>
                 </div>
-                <div className="flex items-center">
-                    <hr className="origin-center rotate-90 md:rotate-0 order-t-2 w-full flex items-center border-[#F46667]" />
+                <div className="flex items-center ">
+                    <svg  className="w-full  hidden md:block" height="5" >
+                        <path d="M1 1 H250 " stroke="#F46667" stroke-width="3" />             
+                    </svg>
+                    <div className=" ">
+                        <svg  className="h-full  block md:hidden" height="120" >
+                                <path d="M1 1 V250 " stroke="#F46667" stroke-width="3" />             
+                        </svg>
+                    </div>
                 </div>
                 <div className="text-center" >
                     <div className="flex justify-center item-center">
                         <Image src={ProfesionalIcon} alt="logo-profesional" className="w-[100px] md:max-w-[120px]"></Image>
                     </div>
-                    <p >Profesional</p>
+                    <p className="mt-4">Profesional</p>
                 </div>
-                <div className="flex items-center">
-                    <hr className="origin-center rotate-90 md:rotate-0 border-t-2 w-full flex items-center border-[#F46667]" />
+                <div className="flex items-center justify-center">
+                    <div className="flex items-center text-center">
+                        <svg  className="w-full  hidden md:block" height="5" >
+                            <path d="M1 1 H250 " stroke="#F46667" stroke-width="3" />             
+                        </svg>
+                    </div>
+                    <div className="flex justify-center">
+                        <svg  className="h-full block md:hidden " height="120" >
+                            <path d="M1 1 V250 " stroke="#F46667" stroke-width="3" />             
+                        </svg>    
+                    </div>           
                 </div>
                 <div className="text-center" >
                     <div className="flex justify-center item-center">
                         <Image src={Continous} alt="logo-continous" className="w-[100px] md:max-w-[120px]"></Image>
                     </div>
-                    <p >Continous</p>
+                    <p className="mt-4">Continous</p>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-3" >
             <div className="mt-6">
                 <Image src={LogoIcon} alt="Logo KMHD UI" className="h-16 w-16"></Image>
-                <h2 className="font-bold text-xl">KMHD Universitas Indonesia</h2>
+                <h2 className="font-bold text-xl mt-5">KMHD Universitas Indonesia</h2>
                 <h3 className="text-sm">#BerlayarSelarasMenyemaikanMakna</h3>
             </div>
             <div  className="mt-6 col-span-2 w-full">
@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
         </div>    
         <div className="p-3 mt-20 mb-14 bg-[#2949A6] rounded text-center text-white">
-            <p>©2023 From Fasilkom KMHD UI for KMHD UI</p>
+            <p>©2023 KMHD UI</p>
         </div>    
     </>
 }

@@ -9,13 +9,18 @@ const decriptionAboutUs = "Keluarga Mahasiswa Hindu Dharma Universitas Indonesia
 
 export default function Home() {
   return (
-    <main className='px-5 sm:px-5 md:px-10 lg:px-32 pt-4'>
-      <Navbar active={"Home"}></Navbar>
-      <CaroselHome></CaroselHome>
-      <AboutHome></AboutHome>
-      <AlumniSaid></AlumniSaid>
-      <Aspirasi></Aspirasi>
-      <Footer></Footer>
+    <main >
+      <div className="p-4 md:px-[100px]">
+        <Navbar active={"Home"}></Navbar>
+      </div>
+      <div className='px-5 sm:px-5 md:px-10 lg:px-32 pt-4'>
+        <CaroselHome></CaroselHome>
+        <AboutHome></AboutHome>
+        <AlumniSaid></AlumniSaid>
+        <Aspirasi></Aspirasi>
+        <Footer></Footer>
+      </div>
+      
     </main>
   )
 }

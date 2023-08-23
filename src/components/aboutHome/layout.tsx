@@ -4,18 +4,18 @@ const decriptionAboutUs = "Keluarga Mahasiswa Hindu Dharma Universitas Indonesia
 export default function AboutHome() {
   return (
     <>
-        <div className='mt-14 grid grid-cols-1 md:grid-cols-2'>
-            <div>
+        <div className='mt-14 grid grid-cols-1 gap-10 md:grid-cols-2'>
+            <div className="">
                 <h2 className="font-bold text-center text-xl ">About Us</h2>
                 <p className="mt-3 text-justify	text-sm font-normal	leading-normal">{decriptionAboutUs}</p>
-                <div className="">
-                    <p className="m-auto">100+</p>
+                <div className="mt-5">
+                    <p className="m-auto text-2xl">200+</p>
                     <p>Active Student</p>
                 </div>
             </div>
 
             <div className="m-auto mt-34 ">
-                <iframe  className="h-full w-auto min-h-200"
+                <iframe  className="w-auto min-h-[200px] rounded-3xl"
                 src="https://www.youtube.com/embed/wikRopkg5HY" 
                 title="YouTube video player"  
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

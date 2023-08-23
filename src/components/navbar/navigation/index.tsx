@@ -8,28 +8,25 @@ const navItems = [
     },
     {
         title: "About",
+        href: '/about'
+    },
+    {
+        title: "Blog",
         href: '/'
     },
     {
-        title: "Home",
-        href: '/'
-    },
-    {
-        title: "Home",
+        title: "Contact",
         href: '/'
     },
 ]
 
-export default function navigation() {
+export default function Navigation() {
     return (
         <> 
-            <section className={`${styles.body} `}>
-                <div className={`${styles.nav} text-black`}>
-                    <Link href="/" className={`${styles.link}`}>Home</Link>
-                    <Link href="/about" className={`${styles.link}`}>About</Link>
-                    <Link href="/" className={`${styles.link}`}>Blog</Link>
-                    <Link href="/" className={`${styles.link}`}>Contact</Link>
-                </div>
+            <section className="flex gap-10">
+                    {navItems.map((items, index) => (
+                        <Link href={items.href} key={index} className="text-[#294390]">{items.title}</Link>
+                    ))}
             </section> 
         </>
     )

@@ -3,21 +3,28 @@
 import Image from 'next/image'
 import Logo from '../../assets/logo.png'
 import Link from 'next/link'
-import NavigationMobile from './navigation/index'
 import styles from '../navbar/styles.module.scss';
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
+import { useAnimate, stagger } from "framer-motion";
+
+import Navigation from './navigation';
+import NavigationMobile from './NavigationMobile';
+
+import MenuToggle from './tougle';
 
 type propsNavbar = {
     active: String
 }
- 
+
 export default function Navbar(props: propsNavbar ) {
     const [isActive, setIsActive] = useState<boolean>(false);
-    
+    useEffect(
+        () => {},[isActive])
+
     return (
         <> 
             <nav className={``}>
-               <div className='flex justify-between mb-4'>
+               <div className='flex justify-between mb-4 relative'>
                     <Image 
                         src={Logo} 
                         alt='Logo KMHD UI'
@@ -25,13 +32,19 @@ export default function Navbar(props: propsNavbar ) {
                         height={66}
                         quality={20}
                         priority={false}
+                        className='self-center'
                     ></Image>
-                    <div className={`${styles.button} visible md:invisible `} onClick={()=> {setIsActive(!isActive)}}>
-                        <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}` }></div>
-                        {isActive ?<NavigationMobile></NavigationMobile> : <></>}
+                    <div className='self-center block md:hidden'>
+                        <MenuToggle onClick= {() => setIsActive(!isActive)} status={isActive}></MenuToggle>
+                    </div>
+                    <div className='self-center hidden md:block'>
+                        <Navigation />
                     </div>
                </div>
+                {isActive ? <NavigationMobile active={isActive}></NavigationMobile> : <></>}
             </nav>  
         </>
     )
   }
+
+

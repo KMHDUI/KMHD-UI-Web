@@ -67,7 +67,7 @@ export default function VisiMisi() {
                             rounded-2xl
                             grid grid-cols-4
                             ">
-                            <p className="col-span-1 flex text-xl font-bold items-center text-center justify-center">{`0${items.number.toString()}`}</p>
+                            <p className="col-span-1 flex text-3xl font-bold items-center text-center justify-center">{`0${items.number.toString()}`}</p>
                             <p className="col-span-3 text-justify font-light text-sm">{items.content}</p>
                         </div>))}
                     </div>
