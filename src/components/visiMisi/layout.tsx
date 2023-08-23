@@ -60,13 +60,13 @@ export default function VisiMisi() {
                         mt-10 md:mt-0
                     ">
                         <h2 className="font-bold text-xl md:text-2xl text-white">Mission</h2>
-                        {contentMision.map((items) => (<div className="
+                        {contentMision.map((items, index) => (<div className="
                             bg-white 
                             mt-4 
                             p-4 
                             rounded-2xl
                             grid grid-cols-4
-                            ">
+                            " key={index}>
                             <p className="col-span-1 flex text-3xl font-bold items-center text-center justify-center">{`0${items.number.toString()}`}</p>
                             <p className="col-span-3 text-justify font-light text-sm">{items.content}</p>
                         </div>))}
