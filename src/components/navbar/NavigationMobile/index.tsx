@@ -49,7 +49,7 @@ export default function NavigationMobile(props: NavigationMobileTypes) {
                         <motion.div
                         initial = {props.active ? "isOpen" : "isClose"}
                         animate = {props.active ? "isOpen" : "isClose"}
-
+                        key={index}
                         // variants= {variantsLink}
                         >
                             <Link href={items.href} key={index} className="text-[#294390] text-lg md: text-xl flex justify-center py-10">{items.title}</Link>
