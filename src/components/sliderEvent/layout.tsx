@@ -6,7 +6,6 @@ import NextSlide from "@/assets/next.svg"
 import BackSlide from "@/assets/back.svg"
 import CircleMobile from "@/assets/circle-2-mobile.svg"
 import DummyImage from "@/assets/alumnisaid1.jpg"
-import Kegiatan1 from "@/assets/kegiatan-1.jpg"
 import Kegiatan2 from "@/assets/kegiatan-2.jpg"
 
 import React, { useState } from 'react';
@@ -102,7 +101,7 @@ export default function SliderEvent() {
                                     sm:h-[250px] sm:w-[250px]
                                     rounded-3xl mx-auto
                                     flex-none"
-                                ><Image src={Kegiatan1} alt="dummy-data" className="scale-150 h-[310px] object-cover"></Image></div>
+                                ><Image src={Kegiatan2} alt="dummy-data" className=" h-[310px] object-cover"></Image></div>
                                 <div className="text-white col-span-3 grow mx-3">
                                     <p className="font-bold text-lg">{dataSlide[currentIndex].date}</p>
                                     <h3 className="pt-4 font-bold text-3xl md:max-w-[600px]">{dataSlide[currentIndex].title}</h3>
