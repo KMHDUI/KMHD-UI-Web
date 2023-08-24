@@ -1,7 +1,10 @@
+"use client"
 import Image from "next/image"
+import { motion } from "framer-motion"
 import Curver from "@/assets/top-curve.svg"
 import Circle from "@/assets/Ellipsebg.svg"
 import Spline from "@/assets/Spline.svg"
+
 
 type contentMisionType = {
     number: Number,
@@ -47,7 +50,15 @@ export default function VisiMisi() {
                     <Image className="h-[700px] w-auto scale-150 invisible md:visible" src={Spline} alt="spline"></Image>
                 </div>
                 
-                <div className="p-14 mt-4 md:my-20 lg:my-32
+                <motion.div 
+                    variants={{
+                        hidden : {opacity : 0, y: 40},
+                        visible: {opacity: 1, y:0}
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{duration:0.5, delay:0.25}}
+                className="p-14 mt-4 md:my-20 lg:my-32
                         grid grid-cols-1 md:grid-cols-2 gap-2 
                         relative z-1
                         ">
@@ -71,7 +82,7 @@ export default function VisiMisi() {
                             <p className="col-span-3 text-justify font-light text-sm">{items.content}</p>
                         </div>))}
                     </div>
-                </div>
+                </motion.div>
                 <Image className="absolute top-0 z-0 w-full" src={Curver} alt="curve"></Image>
             </div>
         </div>     
