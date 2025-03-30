@@ -15,7 +15,7 @@ export default function caroselHome() {
             <div className="w-full h-full m-auto text-center flex flex-col items-center justify-center font-semibold text-2xl md:text-4xl text-white ">
                 <h3 >Welcome To</h3>
                 <h3 >Official Website</h3>
-                <h3 >KMHD UI 2023</h3>
+                <h3 >KMHD UI 2025</h3>
             </div>
         </div>
     </div>
