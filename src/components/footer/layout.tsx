@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
         </div>    
         <div className="p-3 mt-20 mb-14 bg-[#2949A6] rounded text-center text-white">
-            <p>©2023 KMHD UI</p>
+            <p>©2025 KMHD UI</p>
         </div>    
     </>
 }
