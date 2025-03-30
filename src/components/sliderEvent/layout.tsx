@@ -61,7 +61,7 @@ export default function SliderEvent() {
                 <h3 className="font-bold text-center text-xl sm:text-2xl lg:text-3xl">Get to know our events</h3>
                 <p className="
                     font-base mt-4 text-center 
-                    ">KMHD UI 2023 mewadahi seluruh mahasiswa hindu di Universitas Indonesia untuk dapat mengembangkan berbagai potensi diri baik dalam skill berorganisasi maupun mengasah ilmu pengetahian lainnya. Mari simak kegiatan serta program kerja apa saja yang akan dilaksanakan oleh KMHD UI 2023. </p>
+                    ">KMHD UI 2025 mewadahi seluruh mahasiswa hindu di Universitas Indonesia untuk dapat mengembangkan berbagai potensi diri baik dalam skill berorganisasi maupun mengasah ilmu pengetahian lainnya. Mari simak kegiatan serta program kerja apa saja yang akan dilaksanakan oleh KMHD UI 2025. </p>
             </div>
 
             <div className=" px-6 sm:px-8 md:px-10 xl:px-20">

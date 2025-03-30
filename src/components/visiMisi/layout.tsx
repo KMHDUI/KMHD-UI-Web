@@ -34,7 +34,7 @@ export default function VisiMisi() {
     return <>
         <div className="">
             <div className="text-center">
-                <h2 className="font-bold text-xl md:text-3xl">KMHD UI 2023</h2>
+                <h2 className="font-bold text-xl md:text-3xl">KMHD UI 2025</h2>
                 <p className="text-light text-xs md:text-lg">#Berlayar Selaras Menyemaikan Makna</p>
             </div>
 

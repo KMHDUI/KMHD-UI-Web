@@ -8,7 +8,7 @@ export default function ValueAbout() {
         <div className="my-20 md:mt-32 px-9  md:px-24">
             <div className="text-center w-full align-center">
                 <h3 className="font-bold text-lg md:text-2xl">“Berlayar Selaras Menyemaikan Makna”</h3>
-                <p className="mt-5 md:px-30 lg:px-32">Untuk mencapai visi dan misi dari KMHD UI 2023, terdapat 3 nilai yang berdiri tegak untuk melandasi seluruh kegiatan KMHD UI 2023, diantaranya:</p>
+                <p className="mt-5 md:px-30 lg:px-32">Untuk mencapai visi dan misi dari KMHD UI 2025, terdapat 3 nilai yang berdiri tegak untuk melandasi seluruh kegiatan KMHD UI 2025, diantaranya:</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-5 mt-24">
